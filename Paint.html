@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Paint.css">
+    <script defer src="Paint.js"></script>
+    <title>Web Paint</title>
+</head>
+<body>
+    <div class="bar">
+        <div class="colorBar">
+            <input type="color" name="color" id="color">
+            <input type="button" value="Fill in" id="fill" class="fill btn" onclick="fillIn()">
+            <input type="button" value="Clear" id="clear" class="clear btn" onclick="clearAll()">
+        </div>
+        <div class="lineWeightBar">
+            <input type="range" min="1" max="100" value="0" class="slider" step="1" id="myRange">
+            <span class="lineWeightValue" id="lineWeightValue">10</span>
+        </div>
+    </div>
+    <canvas class="canvas" id="canvas"></canvas>
+    <div id="status">© By Vadym Bielov</div>
+</body>
+</html>
